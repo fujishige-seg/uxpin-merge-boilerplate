@@ -21,6 +21,7 @@ module.exports = {
           'src/components/Select/Select.jsx',
           'src/components/Select/components/SelectItem/SelectItem.jsx',
           'src/components/TextField/TextField.jsx',
+          'src/components/Login/Login.jsx',
         ],
       },
       {

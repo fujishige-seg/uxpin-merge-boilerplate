@@ -1,0 +1,26 @@
+name: Sync UXPin Merge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Sync with UXPin Merge
+        env:
+          UXPIN_AUTH_TOKEN: ${{ secrets.UXPIN_AUTH_TOKEN }}
+        run: npx uxpin-merge push --webpack-config ./webpack.config.js --wrapper ./src/UXPinWrapper/UXPinWrapper.js
+
