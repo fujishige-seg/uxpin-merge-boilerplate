@@ -85,3 +85,4 @@ As you can see we are defining the default props and the structure of the Button
 
 If you would like to learn more about managing JSX presets and Merge integration. Please see our [Merge documentation](https://www.uxpin.com/docs/merge/what-is-uxpin-merge/).
 test trigger
+test trigger
