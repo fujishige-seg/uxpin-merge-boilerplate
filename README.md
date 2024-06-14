@@ -87,3 +87,4 @@ If you would like to learn more about managing JSX presets and Merge integration
 test trigger
 test trigger
 test trigger
+test trigger
